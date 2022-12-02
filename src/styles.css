@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Plante;
+    src: url(/assets/Plante.ttf);
+}
+
+@font-face {
+    font-family: Floral;
+    src: url(/assets/FLORAL\ PERSONAL\ USE-SVG.otf);
+}
+
+body{
+    background-image: url(https://img.freepik.com/free-photo/beautiful-shot-forest-with-tall-green-trees_181624-20615.jpg?w=1380&t=st=1669641622~exp=1669642222~hmac=20a236e6858b062be7450cda7087d55ae3c355893daf21601e68567e7d086dd9);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}
