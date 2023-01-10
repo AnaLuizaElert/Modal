@@ -1,0 +1,17 @@
+/* You can add global styles to this file, and also import other style files */
+@font-face {
+    font-family: Plante;
+    src: url(/assets/Plante.ttf);
+}
+
+@font-face {
+    font-family: Floral;
+    src: url(/assets/FLORAL\ PERSONAL\ USE-SVG.otf);
+}
+
+body{
+    background-image: url(https://www.teahub.io/photos/full/167-1676961_real-life-under-the-sea-animal.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    align-content: center;
+}

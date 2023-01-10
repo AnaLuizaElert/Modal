@@ -1,0 +1,167 @@
+#mural{
+    display: flex;
+    flex-direction: column;
+    height: 50vh;
+    width: 40vw;
+    background-color: rgba(240, 248, 255, 0.733);
+    margin: auto;
+    margin-top: 22vh;
+    border-radius: 10px;
+    box-shadow: -1px 3px 6px 0.5px rgba(0, 0, 0, 0.3);
+}
+
+#title{
+    text-align: center;
+    font-family: Plante;
+    font-size: 7rem;   
+    width: 100%;
+    height: 20%;
+    padding-bottom: 4vh;
+    color: #062731;
+}
+
+#title p{
+    
+    margin-top: 2rem;
+}
+
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 70%;
+    width: 100%;
+}
+
+button, input{
+    margin: auto;
+    height: 8vh;
+    width: 25vw;
+    background-color: #0e3f4e;
+    border-radius: 20px;
+    color: aliceblue;
+    font-size: 2rem;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    cursor: pointer;
+    border-color: transparent;
+    box-shadow: -1px 3px 5px 0.5px rgba(0, 0, 0, 0.3);
+}
+
+button:hover{
+    background-color: #072d38;
+}
+
+/*MODAL*/
+.ornitorrinco, .pato, .img_amazonia, .conceito{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    background-color: #4c727c;
+    height: 64vh;
+    width: 40vw;
+    margin-top: -50vh;
+    border-radius: 15px;
+    font-family: Floral;
+    box-shadow: 0px 0px 100vh 100vw rgb(0 0 0 / 0.6);
+}
+
+#inserts{
+    display: flex;
+    flex-direction: row;
+    height: 8vh;
+}
+
+#inserts button, #inserts input{
+    margin: auto;
+    height: 8vh;
+    width: 40%;
+    margin: 3vh auto;
+}
+
+.pato img{
+    height: 36vh;
+    width: auto;
+    margin-top: 4vh;
+    margin: auto;
+    border-radius: 15px;
+}
+
+
+.close{
+    margin: 2%;
+    height: 60%;
+    width: 6%;
+    font-size: 5rem;
+    background-color: white;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #000;
+}
+
+.close p{
+    margin-top: -0.3vh;
+}
+
+.close:hover{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+.text{
+    margin: 2%;
+    font-size: 6.5rem;
+    margin-top: -4.5vh;
+    height: 60%;
+    width: 94%;
+    text-align: center;
+    color: #000;
+}
+
+.conceito{
+    display: flex;
+    flex-direction: column;
+    color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+    text-justify:inter-word;
+}
+
+.header{
+    display: flex;
+    flex-direction: row-reverse;
+    box-sizing: border-box;
+    width: 100%;
+    height: 13%;
+    align-items: stretch;
+    text-align: center; 
+    border-radius: 15px 15px 0px 0px;
+    background-color: #0e3f4e;
+    font-family: Floral;
+}
+
+.conteudo{
+    margin-top: 3vh;
+    text-align: center;
+    font-size: 3rem;
+    padding: 2vw;
+}
+
+.button-img{
+    margin: 3vh auto;
+}
+
+/*IMAGENS*/
+
+.imgs{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 86%;
+    width: 100%;
+}
+
+.imgs img{
+    margin: auto;
+    height: 15vh;
+    width: auto;
+    border-radius: 15px;
+}

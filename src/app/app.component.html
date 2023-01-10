@@ -1,0 +1,75 @@
+<main>
+    <div id="mural">
+      <div id="title">
+        <p>FAUNA</p>
+      </div>
+      <div class="buttons">
+        <button (click)="this.verify3 = true">O QUE É?</button>
+        <button (click)="this.verify = true">PATOS</button>
+        <button (click)="this.verify2 = true">ORNITORRINCOS</button>
+      </div>
+      <app-mural *ngIf="this.verify == true || this.verify2 == true || this.verify3 == true">
+        
+        <div class="conceito" *ngIf="this.verify3 == true">
+          <div class="header">
+            <div class="close" (click)="this.verify3 = false"><p>X</p></div>
+            <div class="text"><p>O QUE É?</p></div>
+          </div>
+            <div class="conteudo">
+              <p>
+                Fauna é o termo usado para definir o grupo no qual se encontram todos os animais. 
+                Também corresponde ao conjunto dos animais característicos de determinada área, 
+                época ou bioma, como por exemplo a fauna da região metropolitana de São Paulo,
+                a fauna do período Triássico, ou a fauna do cerrado.
+              </p>
+            </div>
+            <div class="button-img">
+              <button (click)="this.img_amazonia = true">Imagens</button>
+            </div>
+        </div>
+
+        <div class="img_amazonia" *ngIf="this.img_amazonia == true">
+          <div class="header">
+            <div class="close" (click)="this.img_amazonia = false"><p>X</p></div>
+            <div class="text"><p>FAUNA</p></div>
+          </div>
+          <div class="imgs">
+            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/07/onca-pintada.jpg">
+            <img src="https://static.mundoeducacao.uol.com.br/mundoeducacao/2020/07/galo-da-serra.jpg">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRnDw4OA-U0yHQVKdJb_cRGqBQIasZedI3wTQ&usqp=CAU">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROQcTuLF06nW_xj2vp17SPQS7mC3gtpbz4og&usqp=CAU">
+            <img src="https://s2.glbimg.com/4p_9zp5P4B6zkWs5XhkEPoF44fE=/0x0:1800x1200/1008x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2017/W/D/iPBjRWT2KGm8TqqASesQ/rnc-4635-c.jpg">
+            <img src="https://static.significados.com.br/foto/sloth-1041855-1920.jpg?auto_optimize=low">
+          </div>
+        </div>
+
+        <div class="pato" *ngIf="this.verify == true"> 
+          <div class="header">
+            <div class="close" (click)="this.verify = false"><p>X</p></div>
+            <div class="text"><p>PATOS</p></div>
+          </div>
+          <div id="inserts">
+            <input type="number" placeholder="Escreva um número" #valor>
+            <button (click)="consultar(valor.value)">Enviar</button>
+         </div>
+          <img *ngIf="linkImage != null" src="{{linkImage}}"> 
+        </div>
+     
+        <div class="ornitorrinco" *ngIf="this.verify2 == true">
+          <div class="header">
+            <div class="close" (click)="this.verify2 = false"><p>X</p></div>
+            <div class="text"><p>ORNITORRICO</p></div>
+          </div>
+          <div class="imgs">
+            <img src="https://s2.glbimg.com/WjGdBsAQ4B3OZbQXyv3RknVt3X8=/0x0:1459x1094/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_59edd422c0c84a879bd37670ae4f538a/internal_photos/bs/2021/M/u/qw2DZeSfSjGhzrjMCOWQ/hujp.jpg">
+            <img src="https://static.nationalgeographicbrasil.com/files/styles/image_3200/public/01-platypus-decline-20180430_3dg1547.jpg?w=1600&h=900">
+            <img src="https://v5j9q4b5.rocketcdn.me/wp-content/uploads/2019/10/ornitorrinco-principais-caracteristicas-10-curiosidades-7.jpg">
+            <img src="https://static.biologianet.com/2020/09/ornitorrinco.jpg">
+            <img src="https://socientifica.com.br/wp-content/uploads/2020/02/bebe-ornitorrinco.jpg">
+            <img src="https://qph.cf2.quoracdn.net/main-qimg-6b112bfdc3777249c4175f4000630ca7-lq">
+          </div>
+        </div>
+
+      </app-mural>
+    </div>
+</main>
